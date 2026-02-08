@@ -1,8 +1,8 @@
 class GcalOrganizer < Formula
   desc "Automate meeting note organization, calendar syncing, and task assignment"
   homepage "https://github.com/jflowers/gcal-organizer"
-  url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"
+  url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "7e9871d3cedce44188248e563baa377d412a812de77b458d9d16ca8123fd16ed"
   license "MIT"
   head "https://github.com/jflowers/gcal-organizer.git", branch: "main"
 
