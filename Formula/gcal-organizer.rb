@@ -4,6 +4,12 @@ class GcalOrganizer < Formula
   url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.2.0.tar.gz"
   sha256 "7e9871d3cedce44188248e563baa377d412a812de77b458d9d16ca8123fd16ed"
   license "MIT"
+
+  bottle do
+    root_url "https://github.com/jflowers/gcal-organizer/releases/download/v1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "78bd146a904ad9945649ce52f4b59bf2d9adbf8a5bc90d26f08871f7c04ff160"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "cc2b6605d8870b5e33680ac622995843cac66b9ea19b2a18621de6e4d78e4393"
+  end
   head "https://github.com/jflowers/gcal-organizer.git", branch: "main"
 
   depends_on "go" => :build
