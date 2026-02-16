@@ -1,15 +1,9 @@
 class GcalOrganizer < Formula
   desc "Automate meeting note organization, calendar syncing, and task assignment"
   homepage "https://github.com/jflowers/gcal-organizer"
-  url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.2.3.tar.gz"
-  sha256 "809ae293117d7584fd6b5451dff8e337aaf5082e662d1287f07de82108fb5feb"
+  url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.2.4.tar.gz"
+  sha256 "f1026cf9f71f029154b680a5075c440200a4bb6579390be99256f7e0175029b5"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/jflowers/gcal-organizer/releases/download/v1.2.3"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "883ab9c9d23c9dd8c6fa4bc7fe238d0654d6e8b2c14ad93a075f52507ff51812"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7d738519d67f74b1657cf4e3a3e5e04b8918267f438c78eb7c37865c77ca46d5"
-  end
   head "https://github.com/jflowers/gcal-organizer.git", branch: "main"
 
   depends_on "go" => :build
@@ -17,7 +11,7 @@ class GcalOrganizer < Formula
 
   def install
     # Build the Go binary
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/gcal-organizer"
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.Version=v#{version}"), "./cmd/gcal-organizer"
 
     # Install man page
     man1.install "man/gcal-organizer.1"
