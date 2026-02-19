@@ -1,15 +1,9 @@
 class GcalOrganizer < Formula
   desc "Automate meeting note organization, calendar syncing, and task assignment"
   homepage "https://github.com/jflowers/gcal-organizer"
-  url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.2.4.tar.gz"
-  sha256 "f1026cf9f71f029154b680a5075c440200a4bb6579390be99256f7e0175029b5"
+  url "https://github.com/jflowers/gcal-organizer/archive/refs/tags/v1.2.5.tar.gz"
+  sha256 "df787950deca335c263890ed41a376625913c2312b9a8ad0ad51be6445e3da17"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/jflowers/gcal-organizer/releases/download/v1.2.4"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "c1842a12f5b2bea2d9ae2d99ad74c2e3d62734269cc5030ddef284ab84819a0e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "251f0122aa525fe817589de107d55a2d950bc597c0290b565cbf5f2497c7bd2e"
-  end
   head "https://github.com/jflowers/gcal-organizer.git", branch: "main"
 
   depends_on "go" => :build
