@@ -15,11 +15,11 @@ cask "gcal-organizer" do
   on_macos do
     on_intel do
       url "https://github.com/jflowers/gcal-organizer/releases/download/v#{version}/gcal-organizer_#{version}_darwin_amd64.tar.gz"
-      sha256 "beb7d75ab09fef4a59428160cee415d8926e9aa980a65f93eee9dd735ecb9031"
+      sha256 "7da0e27ddcfc73fb05320093ad47c67d273c4470d89ed5f4d9ecd0e10df9f057"
     end
     on_arm do
       url "https://github.com/jflowers/gcal-organizer/releases/download/v#{version}/gcal-organizer_#{version}_darwin_arm64.tar.gz"
-      sha256 "298e18d49183c041eb5044cbad9fd0ea8c9f034f86825386e30d9d6e7f7be49d"
+      sha256 "897de39acbefed8b553e7b018db76d77b25abd9f4e9a23364ab411c86cdd2b9f"
     end
   end
 
