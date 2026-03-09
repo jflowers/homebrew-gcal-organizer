@@ -3,7 +3,7 @@ cask "gcal-organizer" do
   name "gcal-organizer"
   desc "Automate meeting note organization, calendar syncing, and task assignment"
   homepage "https://github.com/jflowers/gcal-organizer"
-  version "1.3.3"
+  version "1.3.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "gcal-organizer" do
   on_macos do
     on_intel do
       url "https://github.com/jflowers/gcal-organizer/releases/download/v#{version}/gcal-organizer_#{version}_darwin_amd64.tar.gz"
-      sha256 "793c1150164f6ccdccde7468d2027b3cefe71f8a697a222c8ecba45f6b7f2e65"
+      sha256 "beb7d75ab09fef4a59428160cee415d8926e9aa980a65f93eee9dd735ecb9031"
     end
     on_arm do
       url "https://github.com/jflowers/gcal-organizer/releases/download/v#{version}/gcal-organizer_#{version}_darwin_arm64.tar.gz"
-      sha256 "893db9e608da8349751e000cadc7cc3b9b7cc4c43b159b8f920fd221c712bff2"
+      sha256 "298e18d49183c041eb5044cbad9fd0ea8c9f034f86825386e30d9d6e7f7be49d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jflowers/gcal-organizer/releases/download/v#{version}/gcal-organizer_#{version}_linux_amd64.tar.gz"
-      sha256 "67ba449f345bc05bae4388f35bc9f8bae8826618bdfc4e90e4982f9abdf399ff"
+      sha256 "e6b27cede270e8037222f2ba5586d17f0b8987840fa002e4065d9f4413906c57"
     end
     on_arm do
       url "https://github.com/jflowers/gcal-organizer/releases/download/v#{version}/gcal-organizer_#{version}_linux_arm64.tar.gz"
-      sha256 "73b6a964e67b586433a0d79c29a0c1ca3d906ba73e237eea9e4966884f12d4ee"
+      sha256 "5057e2708452799e169dd4488d662b113d0ea238d1183e0e02050b09b6a4f667"
     end
   end
 
